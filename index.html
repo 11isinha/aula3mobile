@@ -5,11 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Aula 03: Tailwind CSS - Mobile First</title>
-    <script>
+
+    <!-- <script>
         tailwind.config = {
             darkMode: 'class',
         }
     </script>
+     -->
+    <style type="text/tailwindcss">
+        @variant dark (&:where(.dark, .dark *));
+
+    </style>
   </head>
   <body class="bg-slate-50 dark:bg-slate-900 transition-colors 
   duration-300 min-h-screen flex flex-col items-center p-6">
